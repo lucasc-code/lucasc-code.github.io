@@ -1,3 +1,7 @@
+body {
+  margin-bottom: 60px;
+}
+
 h1 {
 	color:  black;
 	text-align: center;
@@ -18,7 +22,7 @@ hr {
 }
 
 .photos {
-	
+  max-width: 75%;
 }
 
 .container {
