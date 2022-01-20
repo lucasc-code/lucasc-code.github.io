@@ -15,6 +15,8 @@ p {
 
 img	{
 	width:  50%;
+  border-radius: 100%;
+  max-width: 150px;
 }
 
 hr {
@@ -22,7 +24,7 @@ hr {
 }
 
 .photos {
-  max-width: 350px;
+  text-align: center;
 }
 
 .container {
@@ -41,4 +43,12 @@ hr {
   max-width: 500px;
   padding: 10px;
 
+}
+
+.line {
+  max-width: 300px;
+  height: 4px;
+  background-color: #56cfff;
+  margin: auto;
+  border-radius: 5px;
 }
