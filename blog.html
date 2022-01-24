@@ -19,13 +19,31 @@
 	<div class="blog">
 		<p>This is a space for ideas.</p>
 		<p>I'll share what I find interesting and useful.</p>
+		<hr>
 
+		<h2>Linking A Custom Domain to Your Github Pages Website</h2>
+		<p>Here’s something I couldn’t find on the Github Docs guides. Their posts got me 90% of the way, so I’ll share the final 10% that I had to figure out separately.</p>
+		<p>Steps to link a custom domain to your Github website:</p>
+		<ol>
+			<li>Buy a domain (I used Godaddy).</li>
+			<li>Create/code your website files and push them to your Github Repository. Here’s a <a href="https://medium.com/@svinkle/publish-and-share-your-own-website-for-free-with-github-2eff049a1cb5">great walkthrough post</a> to do so.</li>
+			<li>On <a href="https://github.com/">github.com</a>, log in and go to Settings > Pages > then add your domain to the “Custom Domain” input section, then save it. (This should create a CNAME record with your domain in it in your Github repository).</li>
+			<li>On your DNS settings, change the CNAME from pointing towards yourdomain.com to your username.github.io domain.</li>
+			<li>Add the four IP addresses as A records in your domain. You can find them in this <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Github Docs guide</a>.</li>
+			<li><strong>Delete the A record that points to “Parked” that was auto created upon buying the domain.</strong></li>
+		</ol>
+		<p>I was able to find all this info online except Point #6.</p>
+		<p>On Godaddy, the default A record includes one that just points to “Parked.” My site wasn’t working until I realized I had to deleted that A record, as it was interfering with the others.</p>
+		<p>Figured I’d share it online in case anyone’s looking, as it took me a while to figure it out.</p>
+		<p><em>– Jan. 23, 2022</em></p>
 
+		<hr>
 		<h2>Content Before Design</h2>
 		<p>As I build out this website, I'm noticing that I'd prefer to create more content to fill it out before putting more effort into design.</p>
 		<p>Design, for me, works best with creative constraints. And without content, there are very few constraints.</p>
 		<p><em>– Jan. 23, 2022</em></p>
 
+		<hr>
 		<h2>NFT Experiments</h2>
 		<p>In order to get a more experiential understanding of the NFT space (aside from just browsing Twitter) I decided to create a couple of my own.</p>
 		<p>To reference John Vervaeke's work, I had a good sense of <em>propositional</em> knowledge (the language used in the space) but not yet <em>procedural</em> (how to create my own) or <em>perspectival</em> (what it feels like to create my own) knowledge.</p>
@@ -41,6 +59,7 @@
 		<p><em>- Jan. 23, 2022</em></p>
 
 
+		<hr>
 		<h2>Side Projects</h2>
 		<p>Side projects. Doing things outside one’s normal set of tasks and responsibilities for the sake of curiosity, learning or contribution.</p>
 		<p>They’re famously known for the beginnings of a major transition in someone’s life. A side project led to a change in careers, new relationships, even starting a successful company…</p>
