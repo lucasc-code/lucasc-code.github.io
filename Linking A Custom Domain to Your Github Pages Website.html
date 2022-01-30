@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Linking A Custom Domain to Your Github Pages Website | Lucas Cohen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+	<div class="container">
+  		<h1>Blog</h1>
+  		<div class="line"></div>
+		  <nav>
+			<a href="index.html">Home</a> | 
+			<a href="about.html">About</a> | 
+			<a href="blog.html">Blog</a>  
+		  </nav>
+	</div>
+	<div class="blog">
+		<h2>Linking A Custom Domain to Your Github Pages Website</h2>
+		Here’s something I couldn’t find on the Github Docs guides. Their posts got me 90% of the way, so I’ll share the final 10% that I had to figure out separately.
+		<br>
+		<br>
+		Steps to link a custom domain to your Github website:
+		<ol>
+			<li>Buy a domain (I used Godaddy).</li>
+			<li>Create/code your website files and push them to your Github Repository. Here’s a <a href="https://medium.com/@svinkle/publish-and-share-your-own-website-for-free-with-github-2eff049a1cb5">great walkthrough post</a> to do so.</li>
+			<li>On <a href="https://github.com/">github.com</a>, log in and go to Settings > Pages > then add your domain to the “Custom Domain” input section, then save it. (This should create a CNAME record with your domain in it in your Github repository).</li>
+			<li>On your DNS settings, change the CNAME from pointing towards yourdomain.com to your username.github.io domain.</li>
+			<li>Add the four IP addresses as A records in your domain. You can find them in this <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">Github Docs guide</a>.</li>
+			<li><strong>Delete the A record that points to “Parked” that was auto created upon buying the domain.</strong></li>
+		</ol>
+		I was able to find all this info online except Point #6.
+		<br>
+		<br>
+		On Godaddy, the default A record includes one that just points to “Parked.” My site wasn’t working until I realized I had to deleted that A record, as it was interfering with the others.
+		Figured I’d share it online in case anyone’s looking, as it took me a while to figure it out.
+		<br>
+		<br>
+		<em>– Jan. 23, 2022</em>
+	</div>
+</body>
+</html>
