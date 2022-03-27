@@ -3,11 +3,10 @@ body {
 }
 
 * {
-font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-font-style: normal;
-font-weight: 400;
-text-rendering: optimizeLegibility;
--webkit-font-smoothing: antialiased;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
