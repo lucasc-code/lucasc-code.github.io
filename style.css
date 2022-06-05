@@ -10,6 +10,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+title {
+  font-family: Arial, Helvetica, sans-serif
+}
+
 h1 {
 	color:  black;
 	text-align: center;
